@@ -1,5 +1,7 @@
 # Machine Coding Round: FLIPMED
 
+** Link: https://docs.google.com/document/d/e/2PACX-1vSbAgRng_p5UOJVuTraFgvLRE9YtELDZXrMQbcUslIBLLvK7yEq5ncKIRC7Zz1hk5PzGA-F_suQMYcn/pub
+
 
 ### Description:
 
@@ -50,62 +52,62 @@ Please focus on the Bonus requirement only after ensuring the required features 
 The input/output need not be exactly in this format but the functionality should remain intact
 
 
-i: input
-o: output
-i:registerDoc -> Curious-> Cardiologist
-o: Welcome Dr. Curious !!
-i: markDocAvail: Curious 9:30-10:30
-o: Sorry Dr. Curious slots are 30 mins only
-i: markDocAvail: Curious 9:30-10:00, 12:30-13:00, 16:00-16:30
-o: Done Doc!
-i:registerDoc -> Dreadful-> Dermatologist
-o: Welcome Dr. Dreadful !!
-i: markDocAvail: Dreadful 9:30-10:00, 12:30-13:00, 16:00-16:30
-o: Done Doc!
-i: showAvailByspeciality: Cardiologist
-o: Dr.Curious: (9:30-10:00)
-o: Dr.Curious: (12:30-13:00)
-o: Dr.Curious: (16:00-16:30)
-i: registerPatient ->PatientA
-o: PatientA registered successfully.
-i:  bookAppointment: (PatientA, Dr.Curious, 12:30)
-O: Booked. Booking id: 1234
-i:showAvailByspeciality: Cardiologist
-o: Dr.Curious: (9:30-10:00)
-o: Dr.Curious: (16:00-16:30)
-i: cancelBookingId: 1234
-o: Booking Cancelled
-i: showAvailByspeciality: Cardiologist
-o: Dr.Curious: (9:30-10:00)
-o: Dr.Curious: (12:30-13:00)
-o: Dr.Curious: (16:00-16:30)
-i: bookAppointment: (PatientB, Dr.Curious, 12:30)
-o: Booked. Booking id: 5678
-i:registerDoc -> Daring-> Dermatologist
-o: Welcome Dr. Daring !!
-i: markDocAvail: Daring 11:30-12:00 14:00-14:30
-o: Done Doc!
-i: showAvailByspeciality: Dermatologist
-o: Dr.Dreadful: (9:30-10:00)
-o: Dr.Daring: (11:30-12:00)
-o: Dr.Dreadful: (12:30-13:00)
-o:Dr.Daring:(14:00-14:30)
-o: Dr.Dreadful: (16:00-16:30)
-i: bookAppointment: (PatientF, Dr.Daring, 11:30)
-o: Booked. Booking id: 5587
-i: bookAppointment: (PatientA, Dr.Curious, 12:30)
-o: Booked. Booking id: 5678
-i: bookAppointment: (PatientF, Dr.Curious, 9:30)
-o: Booked. Booking id: 5280
-i: bookAppointment: (PatientC, Dr.Curious, 16:00)
-o: Booked. Booking id: 5701
-i: showAvailByspeciality: Cardiologist
-o: Dr.Curious: No slots available
-i: bookAppointment: (PatientD, Dr.Curious, 16:00, waitlist=true)
-o: Added to the waitlist. Booking id: 5710
-i: cancelBookingId: 5701
-o: Booking Cancelled
-o: Booking confirmed for Booking id: 5710
-i: showAppointmentsBooked(PatientF)
-o: Booking id: 5280, Dr Curious 9:30
-o: Booking id: 5587 , Dr Daring 11:30
+i: input  <br />
+o: output  <br />
+i:registerDoc -> Curious-> Cardiologist <br />
+o: Welcome Dr. Curious !! <br />
+i: markDocAvail: Curious 9:30-10:30 <br />
+o: Sorry Dr. Curious slots are 30 mins only <br />
+i: markDocAvail: Curious 9:30-10:00, 12:30-13:00, 16:00-16:30 <br />
+o: Done Doc! <br />
+i:registerDoc -> Dreadful-> Dermatologist <br />
+o: Welcome Dr. Dreadful !! <br />
+i: markDocAvail: Dreadful 9:30-10:00, 12:30-13:00, 16:00-16:30 <br />
+o: Done Doc! <br />
+i: showAvailByspeciality: Cardiologist <br />
+o: Dr.Curious: (9:30-10:00) <br />
+o: Dr.Curious: (12:30-13:00) <br />
+o: Dr.Curious: (16:00-16:30) <br />
+i: registerPatient ->PatientA <br />
+o: PatientA registered successfully. <br />
+i:  bookAppointment: (PatientA, Dr.Curious, 12:30) <br />
+O: Booked. Booking id: 1234 <br />
+i:showAvailByspeciality: Cardiologist <br />
+o: Dr.Curious: (9:30-10:00) <br />
+o: Dr.Curious: (16:00-16:30) <br />
+i: cancelBookingId: 1234 <br />
+o: Booking Cancelled <br />
+i: showAvailByspeciality: Cardiologist <br />
+o: Dr.Curious: (9:30-10:00) <br />
+o: Dr.Curious: (12:30-13:00) <br />
+o: Dr.Curious: (16:00-16:30) <br />
+i: bookAppointment: (PatientB, Dr.Curious, 12:30) <br />
+o: Booked. Booking id: 5678 <br />
+i:registerDoc -> Daring-> Dermatologist <br />
+o: Welcome Dr. Daring !! <br />
+i: markDocAvail: Daring 11:30-12:00 14:00-14:30 <br />
+o: Done Doc! <br />
+i: showAvailByspeciality: Dermatologist <br />
+o: Dr.Dreadful: (9:30-10:00) <br />
+o: Dr.Daring: (11:30-12:00) <br />
+o: Dr.Dreadful: (12:30-13:00) <br />
+o:Dr.Daring:(14:00-14:30) <br />
+o: Dr.Dreadful: (16:00-16:30) <br />
+i: bookAppointment: (PatientF, Dr.Daring, 11:30) <br />
+o: Booked. Booking id: 5587 <br />
+i: bookAppointment: (PatientA, Dr.Curious, 12:30) <br />
+o: Booked. Booking id: 5678 <br />
+i: bookAppointment: (PatientF, Dr.Curious, 9:30) <br />
+o: Booked. Booking id: 5280 <br />
+i: bookAppointment: (PatientC, Dr.Curious, 16:00) <br />
+o: Booked. Booking id: 5701 <br />
+i: showAvailByspeciality: Cardiologist <br />
+o: Dr.Curious: No slots available <br />
+i: bookAppointment: (PatientD, Dr.Curious, 16:00, waitlist=true) <br />
+o: Added to the waitlist. Booking id: 5710 <br />
+i: cancelBookingId: 5701 <br />
+o: Booking Cancelled <br />
+o: Booking confirmed for Booking id: 5710 <br />
+i: showAppointmentsBooked(PatientF) <br />
+o: Booking id: 5280, Dr Curious 9:30 <br />
+o: Booking id: 5587 , Dr Daring 11:30 <br />
